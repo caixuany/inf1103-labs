@@ -50,13 +50,14 @@ while True:
 
     tax = calculate_tax(stock)
 
-    delivery_count += 1
+    delivery_count += stock
 
     print("Current inventory:", inventory)
     print("Tax for this delivery:", tax)
 
     if inventory > 500:
         print("ALERT: Inventory has exceeded 500 units!")
+        break
 
 
 print("Total Deliveries Processed:", delivery_count)
