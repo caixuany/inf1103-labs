@@ -56,10 +56,18 @@ inventory, transaction_history = load_inventory()
 failed_entries = 0
 delivery_count = 0
 
+def save_inventory(inventory, history):
+    with open("inventory.txt", "w") as file:
+        file.write(str(inventory) + "\n")
+        file.write(",".join(str(value) for value in history))
+
+    print("Inventory saved successfully.")
+    
 while True:
     stock = get_valid_input()
 
     if stock == "quit":
+        save_inventory(inventory, transaction_history)
         break
 
     if stock is None:
