@@ -51,3 +51,26 @@ def search_product():
 
     print("Product not found.")
     search_product()
+    
+def update_stock():
+    print("Update Stock")
+
+    product_id = input("Enter Product ID: ")
+
+    for product in inventory:
+        if product["id"] == product_id:
+            print("Product Found:")
+            print(f"Name: {product['name']}")
+            print(f"Current Stock: {product['stock']}")
+
+            new_stock = int(input("New Stock Quantity: "))
+            product["stock"] = new_stock
+
+            print("Stock updated successfully!")
+            return
+
+    print("Product not found.")
+    update_stock()
+    display_all()
+    
+    
