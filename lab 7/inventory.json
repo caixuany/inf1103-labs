@@ -1,0 +1,10 @@
+[
+    {
+        "type": "physical",
+        "product_id": "P001",
+        "name": "Guitar",
+        "price": 250.0,
+        "stock_quantity": 2,
+        "weight": 50.0
+    }
+]
