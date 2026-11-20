@@ -1,0 +1,41 @@
+[
+    {
+        "product_id": "P001",
+        "name": "Guitar",
+        "price": 250.0,
+        "stock_quantity": 2,
+        "supplier": {
+            "supplier_id": "S000",
+            "name": "Unknown Supplier",
+            "contact_email": "unknown@example.com"
+        },
+        "type": "physical",
+        "weight": 50.0
+    },
+    {
+        "product_id": "D001",
+        "name": "Guitar Lessons",
+        "price": 15.0,
+        "stock_quantity": 100,
+        "supplier": {
+            "supplier_id": "S001",
+            "name": "Acme Supplies",
+            "contact_email": "sales@acme.com"
+        },
+        "type": "digital",
+        "download_size": 12.5
+    },
+    {
+        "product_id": "P002",
+        "name": "Amp",
+        "price": 120.0,
+        "stock_quantity": 4,
+        "supplier": {
+            "supplier_id": "S001",
+            "name": "Acme Supplies",
+            "contact_email": "sales@acme.com"
+        },
+        "type": "physical",
+        "weight": 8.0
+    }
+]
